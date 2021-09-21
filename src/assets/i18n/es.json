@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "CLOTHESSHOES",
+    "search": "Busca aquí un producto",
+    "sign-up": "Iniciar sesión",
+    "alt-cart": "Carrito de compra ClothesShoes",
+    "alt-user": "Perfil de usuario ClothesShoes"
+  },
+  "navbar": {
+    "men": "Hombre",
+    "woman": "Mujer",
+    "junior": "Junior",
+    "kids": "Niños",
+    "accessories": "Accesorios",
+    "sale": "Ofertas"
+  }
+}
