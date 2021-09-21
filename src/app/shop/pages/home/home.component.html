@@ -1,84 +1,18 @@
 <app-header></app-header>
-<section class="position-relative bg-gradient pt-5 pt-lg-6 pb-7 mb-7">
-  <div class="shape shape-bottom shape-curve bg-body">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
-      <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
-    </svg>
-  </div>
-  <!-- Tabs-->
-  <div class="container pb-7">
-    <div class="row align-items-center pb-7">
-      <div class="col-lg-3">
-        <ul class="nav nav-tabs media-tabs media-tabs-light justify-content-center justify-content-lg-start pb-3 mb-4 pb-lg-0 mb-lg-0" role="tablist">
-          <li class="nav-item me-3 mb-3"><a class="nav-link active" href="#camera" data-bs-toggle="tab" role="tab">
-            <div class="d-flex align-items-center"><img class="flex-shrink-0 rounded" src="img/demo/shop-homepage/thumbnails/01.jpg" alt="Product" width="60">
-              <div class="w-100 ps-2 ms-1">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="fs-sm pe-1">Outdoor HD Cloud Security Camera</div><i class="ai-chevron-right lead ms-2 me-1"></i>
-                </div>
-              </div>
-            </div></a></li>
-          <li class="nav-item me-3 mb-3"><a class="nav-link" href="#sneakers" data-bs-toggle="tab" role="tab">
-            <div class="d-flex align-items-center"><img class="flex-shrink-0 rounded" src="img/demo/shop-homepage/thumbnails/02.jpg" alt="Product" width="60">
-              <div class="w-100 ps-2 ms-1">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="fs-sm pe-1">Running Sneakers Sports Collection</div><i class="ai-chevron-right lead ms-2 me-1"></i>
-                </div>
-              </div>
-            </div></a></li>
-          <li class="nav-item me-3 mb-3"><a class="nav-link" href="#vr" data-bs-toggle="tab" role="tab">
-            <div class="d-flex align-items-center"><img class="flex-shrink-0 rounded" src="img/demo/shop-homepage/thumbnails/03.jpg" alt="Product" width="60">
-              <div class="w-100 ps-2 ms-1">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="fs-sm pe-1">Wireless Virtual Reality Headset</div><i class="ai-chevron-right lead ms-2 me-1"></i>
-                </div>
-              </div>
-            </div></a></li>
-        </ul>
-      </div>
-      <div class="col-lg-9">
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="camera">
-            <div class="row align-items-center">
-              <div class="col-lg-6 order-lg-2 pb-1 mb-4 pb-lg-0 mb-lg-0">
-                <div class="mx-auto" style="max-width: 443px;"><img src="img/demo/shop-homepage/hero/01.png" alt="Security Camera"></div>
-              </div>
-              <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                <div class="ps-xl-5">
-                  <h2 class="h1 text-light">Outdoor HD Cloud Security Camera</h2>
-                  <p class="fs-lg text-light mb-lg-5">Stay connected 24/7. Free trial for 30 days</p><a class="btn btn-translucent-light" href="#">Get now - $45.00</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="sneakers" wfd-invisible="true">
-            <div class="row align-items-center">
-              <div class="col-lg-6 order-lg-2 pb-1 mb-4 pb-lg-0 mb-lg-0">
-                <div class="mx-auto" style="max-width: 443px;"><img src="img/demo/shop-homepage/hero/02.png" alt="Running Sneakers"></div>
-              </div>
-              <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                <div class="ps-xl-5">
-                  <h2 class="h1 text-light">Running Sneakers Sports Collection</h2>
-                  <p class="fs-lg text-light mb-lg-5">Run like never before. Money back guarantee</p><a class="btn btn-translucent-light" href="#">Get now - $99.00</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="vr" wfd-invisible="true">
-            <div class="row align-items-center">
-              <div class="col-lg-6 order-lg-2 pb-1 mb-4 pb-lg-0 mb-lg-0">
-                <div class="mx-auto" style="max-width: 443px;"><img src="img/demo/shop-homepage/hero/03.png" alt="VR Headset"></div>
-              </div>
-              <div class="col-lg-6 order-lg-1 text-center text-lg-start">
-                <div class="ps-xl-5">
-                  <h2 class="h1 text-light">Wireless Virtual Reality Headset</h2>
-                  <p class="fs-lg text-light mb-lg-5">Run like never before. Money back guarantee</p><a class="btn btn-translucent-light" href="#">Get now - $180.00</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<app-carousel></app-carousel>
+
+<div class="container-fluid d-md-flex align-items-center px-0 px-xl-3 mt-3" *transloco="let t">
+  <div class="row">
+    <div class="col-md-6 image-card">
+      <img src="assets/media/categorias-destacadas-moda-infantil.png">
+      <span class="image-text">{{t("home.children-fashion")}}</span>
+    </div>
+
+    <div class="col-md-6 image-card">
+      <img src="assets/media/categorias-destacadas-proteccion.png">
+      <span class="image-text">{{t("home.safeguard")}}</span>
     </div>
   </div>
-</section>
+</div>
+
+<app-best-seller></app-best-seller>
