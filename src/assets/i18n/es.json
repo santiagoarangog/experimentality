@@ -1,10 +1,13 @@
 {
   "home": {
-    "title": "CLOTHESSHOES",
+    "title": "ClothesShoes",
     "search": "Busca aquí un producto",
     "sign-up": "Iniciar sesión",
     "alt-cart": "Carrito de compra ClothesShoes",
-    "alt-user": "Perfil de usuario ClothesShoes"
+    "alt-user": "Perfil de usuario ClothesShoes",
+    "children-fashion": "Moda infantil",
+    "safeguard": "Protección",
+    "best-seller": "Productos más buscados"
   },
   "navbar": {
     "men": "Hombre",
