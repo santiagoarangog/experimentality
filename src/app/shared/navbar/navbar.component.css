@@ -1,0 +1,16 @@
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items-navbar a {
+  color: ghostwhite;
+  font-size: 25px;
+}
+
+.items-navbar span {
+  border-left: 2px dimgray solid;
+  height: 50px;
+  margin-top: 1%;
+}

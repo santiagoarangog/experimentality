@@ -1,20 +1,23 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {AppComponent} from './app.component';
-import {ErrorPageComponent} from './shared/error-page/error-page.component';
-import {ShopModule} from './modules/shop/shop.module';
 import {AppRoutingModule} from './app-routing.module';
+import {SharedModule} from './shared/shared.module';
+
+import {AppComponent} from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
-    ShopModule,
-    AppRoutingModule
+    SharedModule,
+    AppRoutingModule,
+    HttpClientModule,
+    TranslocoRootModule
   ],
   providers: [],
   bootstrap: [AppComponent]
