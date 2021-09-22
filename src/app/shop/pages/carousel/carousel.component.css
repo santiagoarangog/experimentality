@@ -18,10 +18,14 @@
   animation: slider 10s infinite;
 }
 
-.image-container {
-  width: 100%;
-  padding-top: 56.25%;
-  background-size: Cover;
-  background-position: center;
-  flex-shrink: 0;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .carousel-item {
+    height: 20vh !important;
+    min-height: 50px !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
 }

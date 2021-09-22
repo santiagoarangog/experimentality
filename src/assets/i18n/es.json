@@ -15,7 +15,8 @@
     "junior": "Junior",
     "kids": "Niños",
     "accessories": "Accesorios",
-    "sale": "Ofertas"
+    "sale": "Ofertas",
+    "close": "Cerrar"
   },
   "footer": {
     "copyright": "Copyright Colombia. Todos los derechos reservados",
@@ -53,6 +54,6 @@
     "page-not-found": "Página no encontrada",
     "help-text-404": "Parece que no podemos encontrar la página que buscas.",
     "back-button": "Regresar a la página principal",
-    "empty-cart": "No hay resultados para tu criterio de busqueda"
+    "empty-cart": "Sin resultados para el criterio de busqueda"
   }
 }
