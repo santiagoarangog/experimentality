@@ -21,7 +21,7 @@ export class BestSellerService {
 
     return this.http.post<ResponseApi>(url, category).pipe(
       map((data: ResponseApi) => data.results),
-      map((result) => result)
+      map((result: BestSellerInterface[]) => result)
     );
   }
 }

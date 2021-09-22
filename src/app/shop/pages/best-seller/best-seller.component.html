@@ -7,23 +7,31 @@
 
       <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter" *ngFor="let product of products$">
         <div class="card card-product card-hover">
-          <div *ngIf="product.sale_price">
-            <span class="badge badge-floating rounded-pill bg-danger">{{t("products.sale")}}</span>
+          <span *ngIf="product.sale_price"
+                class="badge badge-floating rounded-pill bg-danger">
+            {{t("products.sale")}}
+          </span>
+          <div class="bg-size-cover bg-position-center bg-repeat-0 img-product"
+               [style.background-image]="'url('+product.thumbnail + ')'">
           </div>
-          <img [src]="product.thumbnail" class="card-img-top" style="object-fit: cover;" [alt]="product.title">
           <div class="card-body">
-            <h3 class="fs-md fw-medium mb-2"><a class="meta-link" href="shop-single.html">{{product.title}}</a>
+            <h3 class="fs-md fw-medium mb-2">
+              <p class="meta-link">
+                {{product.title}}
+              </p>
             </h3>
-            <span class="text-heading fw-semibold">{{product.price | currency}}</span>
-            <div *ngIf="product.sale_price">
-              <span class="btn-divider"></span>
-              <span class="text-heading fw-semibold">{{product.sale_price | currency}}</span>
+            <div class="d-flex align-items-center">
+              <span class="text-primary fw-semibold">{{product.price | currency}}</span>
+                <span class="btn-divider"></span>
+                <span class="text-danger fw-semibold sale">{{product.price | currency}}</span>
+            </div>
+            <div>
             </div>
           </div>
           <div class="card-footer">
-            <div class="d-grid gap-2">
-              <a class="btn btn-dark mr-5" href="#">
-                <i class="ai-shopping-cart mb-2" style="font-size: 20px"></i>
+            <div class="float-end">
+              <a class="btn btn-dark" href="#">
+                <i class="ai-shopping-cart" style="font-size: 20px"></i>
                 <span class="btn-divider"></span>
                 {{t("products.add-to-cart")}}
               </a>
