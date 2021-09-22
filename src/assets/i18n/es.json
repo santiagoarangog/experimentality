@@ -42,5 +42,8 @@
   "products": {
     "sale": "En Oferta",
     "add-to-cart": "Agregar al carrito"
+  },
+  "search":{
+    "search-recents": "Busquedas recientes"
   }
 }
