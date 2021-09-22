@@ -42,18 +42,3 @@
 .carrusel img {
   cursor:pointer;
 }
-
-.product {
-  border:#CCCCCC 1px solid;
-}
-
-.sale {
-  text-decoration: line-through;
-}
-
-.img-product {
-  width: 100%;
-  height: 30vh;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}

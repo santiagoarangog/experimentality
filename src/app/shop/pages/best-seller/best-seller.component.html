@@ -3,43 +3,7 @@
     <div class="col-md-12 align-items-center mt-5">
       <h1 class="text-black h2">{{t("home.best-seller") | uppercase}}</h1>
     </div>
-    <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
 
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter" *ngFor="let product of products$">
-        <div class="card card-product card-hover">
-          <span *ngIf="product.sale_price"
-                class="badge badge-floating rounded-pill bg-danger">
-            {{t("products.sale")}}
-          </span>
-          <div class="bg-size-cover bg-position-center bg-repeat-0 img-product"
-               [style.background-image]="'url('+product.thumbnail + ')'">
-          </div>
-          <div class="card-body">
-            <h3 class="fs-md fw-medium mb-2">
-              <p class="meta-link">
-                {{product.title}}
-              </p>
-            </h3>
-            <div class="d-flex align-items-center">
-              <span class="text-primary fw-semibold">{{product.price | currency}}</span>
-                <span class="btn-divider"></span>
-                <span class="text-danger fw-semibold sale">{{product.price | currency}}</span>
-            </div>
-            <div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="float-end">
-              <a class="btn btn-dark" href="#">
-                <i class="ai-shopping-cart" style="font-size: 20px"></i>
-                <span class="btn-divider"></span>
-                {{t("products.add-to-cart")}}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <app-card-products [products]="products"></app-card-products>
   </div>
 </div>

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchToolbarComponent } from './search-toolbar/search-toolbar.component';
 import {RouterModule} from '@angular/router';
+import { CardProductsComponent } from './card-products/card-products.component';
 
 
 @NgModule({
@@ -17,13 +18,15 @@ import {RouterModule} from '@angular/router';
     NavbarComponent,
     FooterComponent,
     SidebarComponent,
-    SearchToolbarComponent
+    SearchToolbarComponent,
+    CardProductsComponent
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    SearchToolbarComponent
+    SearchToolbarComponent,
+    CardProductsComponent
   ],
   imports: [
     CommonModule,

@@ -1,3 +1,8 @@
 <app-header [showNavbar]="false"></app-header>
-<h3>Resultados</h3>
-<hr class="bg-danger">
+<div class="container-fluid">
+  <h3>Resultados</h3>
+  <hr class="bg-danger">
+  <div class="row">
+    <app-card-products [products]="products"></app-card-products>
+  </div>
+</div>

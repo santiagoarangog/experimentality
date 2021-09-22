@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Params, Router} from '@angular/router';
+import {BestSellerInterface} from '../best-seller/best-seller.interface';
+import {BestSellerService} from '../best-seller/best-seller.service';
 
 @Component({
   selector: 'app-search',
@@ -7,9 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  search: string = '';
+  products: BestSellerInterface[] = [];
+
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private bestSellerService: BestSellerService,
+  ) {
+  }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params: Params) => {
+      if (params.id) {
+        this.search = params.id;
+        this.bestSellerService.get(params.id).subscribe((result: BestSellerInterface[]) => {
+          this.products = result;
+        });
+      }
+    });
   }
 
 }

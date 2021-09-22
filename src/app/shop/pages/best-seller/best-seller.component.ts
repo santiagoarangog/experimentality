@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {BestSellerService} from './best-seller.service';
 import {BestSellerInterface} from './best-seller.interface';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-best-seller',
@@ -10,7 +9,7 @@ import {Observable} from 'rxjs';
 })
 export class BestSellerComponent implements OnInit {
 
-  products$: BestSellerInterface[] = [];
+  products: BestSellerInterface[] = [];
 
   constructor(private bestSellerService: BestSellerService) {
   }
@@ -18,8 +17,7 @@ export class BestSellerComponent implements OnInit {
   ngOnInit(): void {
     this.bestSellerService.get('moda')
       .subscribe((resp: BestSellerInterface[]) => {
-        console.log(resp);
-        this.products$ = resp;
+        this.products = resp;
       })
   }
 
