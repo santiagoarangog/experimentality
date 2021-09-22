@@ -11,6 +11,7 @@ import {RouterModule} from '@angular/router';
 import { CardProductsComponent } from './card-products/card-products.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { NavbarMobileComponent } from './navbar-mobile/navbar-mobile.component';
+import {CartComponent} from './cart/cart.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavbarMobileComponent } from './navbar-mobile/navbar-mobile.component';
     SearchToolbarComponent,
     CardProductsComponent,
     ScrollTopComponent,
-    NavbarMobileComponent
+    NavbarMobileComponent,
+    CartComponent
   ],
     exports: [
         HeaderComponent,

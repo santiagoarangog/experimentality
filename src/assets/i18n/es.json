@@ -55,5 +55,9 @@
     "help-text-404": "Parece que no podemos encontrar la página que buscas.",
     "back-button": "Regresar a la página principal",
     "empty-cart": "Sin resultados para el criterio de busqueda"
+  },
+  "cart": {
+    "title": "Carrito de compras",
+    "checkout": "Checkout"
   }
 }
