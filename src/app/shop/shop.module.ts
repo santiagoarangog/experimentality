@@ -6,13 +6,15 @@ import {SharedModule} from '../shared/shared.module';
 import {CarouselComponent} from './pages/carousel/carousel.component';
 import { BestSellerComponent } from './pages/best-seller/best-seller.component';
 import {TranslocoRootModule} from '../transloco-root.module';
+import { SearchComponent } from './pages/search/search.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     CarouselComponent,
-    BestSellerComponent
+    BestSellerComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

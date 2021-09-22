@@ -5,6 +5,10 @@ import {HeaderComponent} from './header/header.component';
 import {NavbarComponent} from './navbar/navbar.component';
 import {TranslocoRootModule} from '../transloco-root.module';
 import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SearchToolbarComponent } from './search-toolbar/search-toolbar.component';
+import {RouterModule} from '@angular/router';
+import { CardProductsComponent } from './card-products/card-products.component';
 
 
 @NgModule({
@@ -12,15 +16,22 @@ import { FooterComponent } from './footer/footer.component';
     ErrorPageComponent,
     HeaderComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent,
+    SearchToolbarComponent,
+    CardProductsComponent
   ],
-    exports: [
-        HeaderComponent,
-        FooterComponent
-    ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    SearchToolbarComponent,
+    CardProductsComponent
+  ],
   imports: [
     CommonModule,
     TranslocoRootModule,
+    RouterModule,
   ]
 })
 export class SharedModule {
