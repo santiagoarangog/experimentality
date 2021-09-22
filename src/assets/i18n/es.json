@@ -16,5 +16,27 @@
     "kids": "Niños",
     "accessories": "Accesorios",
     "sale": "Ofertas"
+  },
+  "footer": {
+    "copyright": "Copyright Colombia. Todos los derechos reservados",
+    "alt-footer": "Logo experimentality",
+    "follow": "Síguenos en:",
+    "politics": "Políticas",
+    "privacy-policies": "Políticas de privacidad",
+    "change-policies": "Politicas de cambio",
+    "shipping-policies": "Políticas de envío",
+    "terms-conditions": "Términos y condiciones",
+    "social-responsability": "Responsabilidad social",
+    "about-us": "Sobre nosotros",
+    "find-store": "Encuentra tu tienda",
+    "contact": "Contáctanos",
+    "work-with-us": "Trabaja con nosotros"
+  },
+  "carousel": {
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "slide-home-one": "Banner principal del sitio",
+    "slide-home-two": "Cuidado de la famila",
+    "slide-home-three": "Moda infantil"
   }
 }

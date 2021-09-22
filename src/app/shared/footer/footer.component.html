@@ -1,0 +1,47 @@
+<footer class="footer bg-black pt-5 pt-md-6" *transloco="let t">
+  <div class="container pt-3 pb-0 pt-md-0 pb-md-3">
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="widget widget-light pb-2 mb-4">
+          <h4 class="widget-title">{{t("footer.politics") | uppercase}}</h4>
+          <ul>
+            <li><a class="widget-link" href="#">{{t("footer.privacy-policies")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.change-policies")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.shipping-policies")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.terms-conditions")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.social-responsability")}}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="widget widget-light pb-2 mb-4">
+          <h4 class="widget-title">{{t("footer.about-us") | uppercase}}</h4>
+          <ul>
+            <li><a class="widget-link" href="#">{{t("footer.find-store")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.contact")}}</a></li>
+            <li><a class="widget-link" href="#">{{t("footer.work-with-us")}}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="widget widget-light pb-3" style="max-width: 24rem;">
+          <h3 class="widget-title">{{t("footer.follow") | uppercase}}</h3>
+        </div>
+        <div class="widget widget-light pt-1 mb-4">
+          <div class="d-flex pt-2 pt-sm-0 ms-auto">
+            <a class="btn-social bs-facebook bs-light me-4 ml-4" href="#"><i class="ai-facebook display-4"></i></a>
+            <a class="btn-social bs-twitter bs-light me-4 ml-4" href="#"><i class="ai-twitter display-4"></i></a>
+            <a class="btn-social bs-instagram bs-light me-4 ml-4" href="#"><i class="ai-instagram display-4"></i></a>
+            <a class="btn-social bs-youtube bs-light me-4 ml-4" href="#"><i class="ai-youtube display-4"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-sm-flex justify-content-between align-items-center pb-4 pb-sm-2">
+      <div class="order-sm-2 mb-4 mb-sm-3"><img src="assets/media/favicon.png" [alt]="t('footer.alt-footer')"
+                                                width="50"></div>
+      <div class="order-sm-1 mb-3">
+        <p class="fs-ms mb-0"><span class="text-light opacity-50 me-1">© {{t("footer.copyright")}}</span></p>
+      </div>
+    </div>
+  </div>
+</footer>

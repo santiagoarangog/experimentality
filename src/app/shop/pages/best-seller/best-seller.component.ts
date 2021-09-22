@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {BestSellerService} from './best-seller.service';
+import {Observable} from 'rxjs';
+import {BestSellerInterface} from './best-seller.interface';
 
 @Component({
   selector: 'app-best-seller',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BestSellerComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private bestSellerService: BestSellerService) {
+  }
 
   ngOnInit(): void {
   }
