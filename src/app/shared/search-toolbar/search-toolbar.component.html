@@ -1,0 +1,8 @@
+<!-- Search-->
+<div class="widget mb-1" *transloco="let t">
+  <div class="input-group">
+    <i class="ai-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+    <input type="text" class="form-control w-50" [placeholder]="t('home.search')" (keyup.enter)="search()" #txtSearch
+           maxlength="20">
+  </div>
+</div>
