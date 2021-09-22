@@ -1,4 +1,5 @@
 export const environment = {
-  baseUrl: 'http://localhost:4200',
+  baseUrl: 'https://experimentality-sag.herokuapp.com/',
+  url: 'https://api.mercadolibre.com/sites/MCO/',
   production: true
 };
