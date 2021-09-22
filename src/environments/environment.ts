@@ -4,6 +4,7 @@
 
 export const environment = {
   baseUrl: 'http://localhost:4200',
+  url: 'https://api.mercadolibre.com/sites/MCO/',
   production: false
 };
 
