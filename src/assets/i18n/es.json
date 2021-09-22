@@ -45,5 +45,14 @@
   },
   "search":{
     "search-recents": "Busquedas recientes"
+  },
+  "error-page": {
+    "404": "Error 404",
+    "alt-image-404": "Error 404 Sitio no encontrado",
+    "text-description-404": "Código de error: 404",
+    "page-not-found": "Página no encontrada",
+    "help-text-404": "Parece que no podemos encontrar la página que buscas.",
+    "back-button": "Regresar a la página principal",
+    "empty-cart": "No hay resultados para tu criterio de busqueda"
   }
 }

@@ -12,14 +12,14 @@
         <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
           <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;">
             <div class="simplebar-content" style="padding: 0px 24px 0px 0px;">
-              <app-search-toolbar></app-search-toolbar>
-              <hr class="text-danger"/>
               <!-- Categories-->
               <div class="widget widget-categories mb-5">
                 <h3 class="widget-title">Historial</h3>
+                <hr class="text-danger"/>
                 <ul>
                   <li>
-                    <a *ngFor="let item of historial" (click)="search( item )" id="item" href="#" class="widget-link">
+                    <a *ngFor="let item of history" [routerLink]="['/shop/home/search', item]"
+                       class="widget-link">
                       {{ item | titlecase }}
                     </a>
                   </li>
@@ -27,6 +27,7 @@
               </div>
               <div class="widget widget-categories mb-5">
                 <h3 class="widget-title">Terminos de busqueda</h3>
+                <hr class="text-danger"/>
                 <ul>
                   <li>
                     <a (click)="searchLimit(10)" id="searchLimit1" href="#" class="widget-link">
@@ -40,12 +41,6 @@
                     </a>
                   </li>
                 </ul>
-              </div>
-              <div class="widget mt-n1 mb-5">
-                <p class="fs-ms text-muted">For
-                  <span class="text-primary"><a href="https://santiagoarangog.github.io/cv-santiago-arango-g/"
-                                                target="_blank">Santiago Arango Gutierrez</a></span>
-                </p>
               </div>
             </div>
           </div>
