@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {BestSellerService} from '../../shop/pages/best-seller/best-seller.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-search-toolbar',
@@ -10,19 +11,22 @@ export class SearchToolbarComponent implements OnInit {
 
   @ViewChild('txtSearch') txtSearch!: ElementRef<HTMLInputElement>;
 
-  constructor(private bestSellerService: BestSellerService) {
+  valueSearch: string = '';
+
+  constructor(private bestSellerService: BestSellerService,
+              private _router: Router) {
   }
 
   ngOnInit(): void {
   }
 
   search(): void {
-    const valor = this.txtSearch.nativeElement.value;
-    if (valor.trim().length === 0) {
+    this.valueSearch = this.txtSearch.nativeElement.value;
+    if (this.valueSearch.trim().length === 0) {
       return;
     }
-    this.bestSellerService.get(valor);
-    this.txtSearch.nativeElement.value = '';
+    this.bestSellerService.search(this.valueSearch);
+    this.txtSearch.nativeElement.value = this.valueSearch;
   }
 
 }

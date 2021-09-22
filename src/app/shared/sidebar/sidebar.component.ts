@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {BestSellerService} from '../../shop/pages/best-seller/best-seller.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,12 +8,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  historial: [] = [];
+  history: string[] = [];
 
-  constructor() {
+  constructor(private bestSellerService: BestSellerService) {
   }
 
   ngOnInit(): void {
+    this.history = this.bestSellerService.history;
+    console.log(this.history);
   }
 
   searchLimit(numLimit: number): void {
@@ -20,6 +23,5 @@ export class SidebarComponent implements OnInit {
   }
 
   search(item: string): void {
-
   }
 }

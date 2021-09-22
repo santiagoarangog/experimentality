@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchToolbarComponent } from './search-toolbar/search-toolbar.component';
 import {RouterModule} from '@angular/router';
 import { CardProductsComponent } from './card-products/card-products.component';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 
 @NgModule({
@@ -19,15 +20,17 @@ import { CardProductsComponent } from './card-products/card-products.component';
     FooterComponent,
     SidebarComponent,
     SearchToolbarComponent,
-    CardProductsComponent
+    CardProductsComponent,
+    ScrollTopComponent
   ],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-    SearchToolbarComponent,
-    CardProductsComponent
-  ],
+    exports: [
+        HeaderComponent,
+        FooterComponent,
+        SidebarComponent,
+        SearchToolbarComponent,
+        CardProductsComponent,
+        ErrorPageComponent
+    ],
   imports: [
     CommonModule,
     TranslocoRootModule,

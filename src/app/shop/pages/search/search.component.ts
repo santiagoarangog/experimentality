@@ -12,6 +12,8 @@ export class SearchComponent implements OnInit {
 
   search: string = '';
   products: BestSellerInterface[] = [];
+  limit: number = 20;
+  typeError: string = "empty-cart";
 
   constructor(
     private router: Router,
@@ -24,9 +26,10 @@ export class SearchComponent implements OnInit {
     this.route.params.subscribe((params: Params) => {
       if (params.id) {
         this.search = params.id;
-        this.bestSellerService.get(params.id).subscribe((result: BestSellerInterface[]) => {
-          this.products = result;
-        });
+        this.bestSellerService.get(params.id, this.limit)
+          .subscribe((result: BestSellerInterface[]) => {
+            this.products = result;
+          });
       }
     });
   }
