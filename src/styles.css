@@ -4,3 +4,31 @@
   align-items: center;
   justify-content: center;
 }
+
+.margin-top{
+  margin-top: 10%;
+}
+
+.margin-top-search{
+  margin-top: 5%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .margin-top {
+    margin-top: 25%;
+  }
+
+  .margin-top-search {
+    margin-top: 25%;
+  }
+
+  .carousel-item {
+    height: 20vh !important;
+    min-height: 50px !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
