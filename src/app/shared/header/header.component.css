@@ -8,6 +8,7 @@
 }
 
 .btn-default {
-  background-color: gray !important;
+  background-color: white !important;
   color: black;
+  border: solid 2px black;
 }
