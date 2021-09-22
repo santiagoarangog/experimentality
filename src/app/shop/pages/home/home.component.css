@@ -1,5 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
+:root {
+  --blue: #7dcdff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #007bff;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #ffffff;
+  --gray: #869ab8;
+  --gray-dark: #384c74;
+  --primary: #335eea;
+  --secondary: #506690;
+  --success: #007bff;
+  --info: #7c69ef;
+  --warning: #fad776;
+  --danger: #df4759;
+  --light: #f9fbfd;
+  --dark: #2b354f;
+  --primary-desat: #6c8aec;
+  --black: #161c2d;
+}
+
+*::selection {
+  background: var(--green) !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px var(--green) !important;
+}
+
+/* Firefox */
+*::-moz-selection {
+  background: var(--green) !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px var(--green) !important;
+}
+
 .image-card {
   position: relative;
   display: inline-block;
@@ -15,4 +54,22 @@
   font-weight: bold;
   font-style: italic;
   text-shadow: 4px 4px 2px rgba(0,0,0);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .image-card {
+    margin: 2%;
+  }
+
+  .image-text {
+    position: absolute;
+    bottom: 10%;
+    right: 5rem;
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 4px 4px 2px rgba(0,0,0);
+  }
 }
