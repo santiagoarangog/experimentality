@@ -1,5 +1,7 @@
 export interface BestSellerInterface {
-  id:string;
+  id: number;
   title: string;
+  sale_price: number;
   price: number;
+  thumbnail: string;
 }

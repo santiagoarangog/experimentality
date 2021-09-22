@@ -38,5 +38,9 @@
     "slide-home-one": "Banner principal del sitio",
     "slide-home-two": "Cuidado de la famila",
     "slide-home-three": "Moda infantil"
+  },
+  "products": {
+    "sale": "En Oferta",
+    "add-to-cart": "Agregar al carrito"
   }
 }
