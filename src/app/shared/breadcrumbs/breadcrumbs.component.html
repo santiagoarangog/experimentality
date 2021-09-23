@@ -1,0 +1,16 @@
+<!--Breadcrumbs component-->
+<nav aria-label="breadcrumb" *transloco="let t">
+  <ol class="py-1 my-2 breadcrumb">
+    <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs; let last = last">
+      <a class="btn btn-sm link-breadcrumb" [routerLink]="breadcrumb.url"
+         [ngClass]="{'text-primary disabled' : last}">
+        {{ breadcrumb.label }}
+      </a>
+    </li>
+    <li class="breadcrumb-item" style="cursor:pointer;">
+      <a class="btn btn-sm link-breadcrumb-return" [routerLink]="'./..'">
+        {{t("breadcrumb.return")}}
+      </a>
+    </li>
+  </ol>
+</nav>

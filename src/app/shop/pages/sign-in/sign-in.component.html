@@ -1,28 +1,29 @@
-<main class="page-wrapper d-flex flex-column">
+<main class="page-wrapper d-flex flex-column" *transloco="let t">
   <app-header></app-header>
   <!-- Page content-->
   <!-- Background image-->
   <div class="d-none d-md-block position-absolute w-50 h-100 bg-size-cover0"
        style="top: 0; right: 0; background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80');"></div>
   <!-- Actual content-->
-  <section class="container d-flex align-items-center pt-7 pb-3 pb-md-4 bg-repeat-0 bg-cover" style="flex: 1 0 auto;margin-top: 10%;">
+  <section class="container d-flex align-items-center pt-7 pb-3 pb-md-4 bg-repeat-0 bg-cover"
+           style="flex: 1 0 auto;margin-top: 15%;">
     <div class="w-100 pt-3">
       <div class="row">
         <div class="col-lg-4 col-md-6 offset-lg-1">
+          <app-breadcrumbs></app-breadcrumbs>
           <!-- Sign in view-->
           <div class="view show" id="signin-view">
-            <h1 class="h2">Sign in</h1>
-            <p class="fs-ms text-muted mb-4">Sign in to your account using email and password provided during
-              registration.</p>
+            <h1 class="h2">{{t("sign-in.title")}}</h1>
+            <p class="fs-ms text-muted mb-4">{{t("sign-in.description")}}</p>
             <form class="needs-validation" novalidate="">
               <div class="input-group mb-3"><i
                 class="ai-mail position-absolute top-50 start-0 translate-middle-y ms-3"></i>
-                <input class="form-control rounded" type="email" placeholder="Email" required="">
+                <input class="form-control rounded" type="email" [placeholder]="t('sign-in.email')" required="">
               </div>
               <div class="input-group mb-3"><i
                 class="ai-lock position-absolute top-50 start-0 translate-middle-y ms-3"></i>
                 <div class="password-toggle w-100">
-                  <input class="form-control" type="password" placeholder="Password" required="">
+                  <input class="form-control" type="password" [placeholder]="t('sign-in.password')" required="">
                   <label class="password-toggle-btn" aria-label="Show/hide password">
                     <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
                   </label>
@@ -31,54 +32,12 @@
               <div class="d-flex justify-content-between align-items-center mb-3 pb-1">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="keep-signed-2">
-                  <label class="form-check-label" for="keep-signed-2">Keep me signed in</label>
+                  <label class="form-check-label" for="keep-signed-2">{{t("sign-in.keep-me")}}</label>
                 </div>
-                <a class="nav-link-style fs-ms" href="password-recovery.html">Forgot password?</a>
+                <a class="nav-link-style fs-ms" [routerLink]="['/shop/sign-in']">{{t("sign-in.forgot-password")}}</a>
               </div>
-              <button class="btn btn-primary d-block w-100" type="submit">Sign in</button>
-              <p class="fs-sm pt-3 mb-0">Don't have an account? <a href="#" class="fw-medium" data-view="#signup-view">Sign
-                up</a></p>
+              <button class="btn btn-primary d-block w-100" type="submit">{{t("sign-in.title")}}</button>
             </form>
-          </div>
-          <!-- Sign up view-->
-          <div class="view" id="signup-view">
-            <h1 class="h2">Sign up</h1>
-            <p class="fs-ms text-muted mb-4">Registration takes less than a minute but gives you full control over your
-              orders.</p>
-            <form class="needs-validation" novalidate="">
-              <div class="mb-3">
-                <input class="form-control" type="text" placeholder="Full name" required="">
-              </div>
-              <div class="mb-3">
-                <input class="form-control" type="text" placeholder="Email" required="">
-              </div>
-              <div class="input-group mb-3">
-                <div class="password-toggle w-100">
-                  <input class="form-control" type="password" placeholder="Password" required="">
-                  <label class="password-toggle-btn" aria-label="Show/hide password">
-                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="input-group mb-3">
-                <div class="password-toggle w-100">
-                  <input class="form-control" type="password" placeholder="Confirm password" required="">
-                  <label class="password-toggle-btn" aria-label="Show/hide password">
-                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
-                  </label>
-                </div>
-              </div>
-              <button class="btn btn-primary d-block w-100" type="submit">Sign up</button>
-              <p class="fs-sm pt-3 mb-0">Already have an account? <a href="#" class="fw-medium"
-                                                                     data-view="#signin-view">Sign in</a></p>
-            </form>
-          </div>
-          <div class="border-top text-center mt-4 pt-4">
-            <p class="fs-sm fw-medium text-heading">Or sign in with</p><a
-            class="btn-social bs-facebook bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-facebook"></i></a><a
-            class="btn-social bs-twitter bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-twitter"></i></a><a
-            class="btn-social bs-instagram bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-instagram"></i></a><a
-            class="btn-social bs-google bs-outline bs-lg mx-1 mb-2" href="#"><i class="ai-google"></i></a>
           </div>
         </div>
       </div>

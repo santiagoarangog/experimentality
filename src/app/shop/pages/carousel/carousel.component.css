@@ -18,9 +18,22 @@
   animation: slider 10s infinite;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item {
+    height: 30vh !important;
+    min-height: 300px !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .carousel-item {
-    height: 20vh !important;
+    height: 40vh !important;
     min-height: 50px !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;

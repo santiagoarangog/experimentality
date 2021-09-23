@@ -2,7 +2,7 @@
   "home": {
     "title": "ClothesShoes",
     "search": "Busca aquí un producto",
-    "sign-up": "Iniciar sesión",
+    "sign-in": "Iniciar sesión",
     "alt-cart": "Carrito de compra ClothesShoes",
     "alt-user": "Perfil de usuario ClothesShoes",
     "children-fashion": "Moda infantil",
@@ -18,6 +18,9 @@
     "accessories": "Accesorios",
     "sale": "Ofertas",
     "close": "Cerrar"
+  },
+  "breadcrumb": {
+    "return": "Atrás"
   },
   "footer": {
     "copyright": "Copyright Colombia. Todos los derechos reservados",
@@ -45,8 +48,9 @@
     "sale": "En Oferta",
     "add-to-cart": "Agregar al carrito"
   },
-  "search":{
-    "search-recents": "Busquedas recientes"
+  "search": {
+    "search-recents": "Busquedas recientes",
+    "history": "Historial de busquedas recientes"
   },
   "error-page": {
     "404": "Error 404",
@@ -59,6 +63,16 @@
   },
   "cart": {
     "title": "Carrito de compras",
-    "checkout": "Checkout"
+    "checkout": "Checkout",
+    "total": "Total",
+    "alt-product": "Imagen del producto"
+  },
+  "sign-in": {
+    "title": "Iniciar sesión",
+    "description": "Inicie sesión en su cuenta con el correo electrónico y la contraseña proporcionados durante el registro.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "keep-me": "Recordarme",
+    "forgot-password": "Olvidó su contraseña?"
   }
 }

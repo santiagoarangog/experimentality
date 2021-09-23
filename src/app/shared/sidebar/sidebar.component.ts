@@ -15,7 +15,6 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     this.history = this.bestSellerService.history;
-    console.log(this.history);
   }
 
   searchLimit(numLimit: number): void {
