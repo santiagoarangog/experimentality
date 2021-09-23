@@ -1,0 +1,9 @@
+<!--Breadcrumbs component-->
+<nav aria-label="breadcrumb" *transloco="let t">
+  <ol class="py-1 my-2 breadcrumb">
+    <li class="breadcrumb-item" *ngFor="let breadcrumb of breadcrumbs; let first = first; let last = last">
+      <a [routerLink]="breadcrumb.url" [ngClass]="{'text-primary' : last}">{{ breadcrumb.label }}</a>
+    </li>
+    <li class="breadcrumb-item" style="cursor:pointer;" [routerLink]="'./..'">{{t("breadcrumb.return")}}</li>
+  </ol>
+</nav>

@@ -11,19 +11,31 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        data: {
+          breadcrumb: 'Inicio'
+        },
       },
       {
         path: 'search/:id',
-        component: SearchComponent
+        component: SearchComponent,
+        data: {
+          breadcrumb: 'Busqueda'
+        },
       },
       {
         path: 'checkout',
-        component: CheckoutComponent
+        component: CheckoutComponent,
+        data: {
+          breadcrumb: 'Pago'
+        },
       },
       {
         path: 'sign-in',
-        component: SignInComponent
+        component: SignInComponent,
+        data: {
+          breadcrumb: 'Iniciar sesión'
+        },
       },
       {
         path: '**',

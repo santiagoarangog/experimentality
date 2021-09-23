@@ -10,14 +10,20 @@ const routes: Routes = [
   },
   {
     path: 'shop',
-    loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)
+    loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule),
+    data: {
+      breadcrumb: 'Tienda'
+    },
   },
   {
-    path: '**', pathMatch: 'full', redirectTo: '404'
+    path: '**', pathMatch: 'full', redirectTo: '404',
   },
   {
     path: '404',
-    component: ErrorPageComponent
+    component: ErrorPageComponent,
+    data: {
+      breadcrumb: 'Error 404'
+    },
   },
 ]
 

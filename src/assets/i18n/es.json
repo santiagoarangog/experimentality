@@ -19,6 +19,9 @@
     "sale": "Ofertas",
     "close": "Cerrar"
   },
+  "breadcrumb": {
+    "return": "Atrás"
+  },
   "footer": {
     "copyright": "Copyright Colombia. Todos los derechos reservados",
     "alt-footer": "Logo experimentality",
@@ -45,7 +48,7 @@
     "sale": "En Oferta",
     "add-to-cart": "Agregar al carrito"
   },
-  "search":{
+  "search": {
     "search-recents": "Busquedas recientes"
   },
   "error-page": {

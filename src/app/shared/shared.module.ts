@@ -12,6 +12,7 @@ import { CardProductsComponent } from './card-products/card-products.component';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 import { NavbarMobileComponent } from './navbar-mobile/navbar-mobile.component';
 import {CartComponent} from './cart/cart.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {CartComponent} from './cart/cart.component';
     CardProductsComponent,
     ScrollTopComponent,
     NavbarMobileComponent,
-    CartComponent
+    CartComponent,
+    BreadcrumbsComponent
   ],
     exports: [
         HeaderComponent,
@@ -33,7 +35,8 @@ import {CartComponent} from './cart/cart.component';
         SidebarComponent,
         SearchToolbarComponent,
         CardProductsComponent,
-        ErrorPageComponent
+        ErrorPageComponent,
+        BreadcrumbsComponent
     ],
   imports: [
     CommonModule,
