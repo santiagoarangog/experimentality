@@ -1,27 +1,21 @@
-# Experimentatily
+# Experimentatity CLOTHESSHOES Por Santiago Arango Gutierrez
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
-## Development server
+## Montar ambiente de desarrollo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para desplegar el siguiente proyecto consta con hacer lo siguiente, clona este repositorio en tu computadora luego allí
+ejecutas `npm install`
 
-## Code scaffolding
+Para subir la aplicación en tu entorno de desarrollo consta con ejecutar en la terminal el siguiente comando `ng serve`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navega a la ruta `http://localhost:4200/`.
 
-## Build
+## Generar versión para desplegar en servidor
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta el `ng build` en tu terminal. La versión de despliegue se genera en la siguiente carpeta `dist/`.
 
-## Running unit tests
+## Ve la versión en vivo ahora
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ingresa a la url &bull; https://experimentality-sag.netlify.app/
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

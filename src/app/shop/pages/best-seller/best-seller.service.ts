@@ -14,6 +14,7 @@ export class BestSellerService {
 
   baseUrl = environment.url;
   private _history: string[] = [];
+  private _products: string[] = [];
 
   constructor(private http: HttpClient,
               private _router: Router) {
@@ -30,6 +31,10 @@ export class BestSellerService {
   }
 
   get history() {
+    return [...this._history];
+  }
+
+  get productsOfCart() {
     return [...this._history];
   }
 

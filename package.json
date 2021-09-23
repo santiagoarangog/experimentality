@@ -21,6 +21,7 @@
     "@ngneat/transloco": "^2.23.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "typedoc": "^0.22.4",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

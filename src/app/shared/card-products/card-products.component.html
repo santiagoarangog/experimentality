@@ -25,7 +25,7 @@
       </div>
       <div class="card-footer">
         <div class="float-end">
-          <a class="btn btn-dark" href="#">
+          <a class="btn btn-dark" (click)="addProduct(product.thumbnail,product.title,product.price)">
             <i class="ai-shopping-cart" style="font-size: 20px"></i>
             <span class="btn-divider"></span>
             {{t("products.add-to-cart")}}

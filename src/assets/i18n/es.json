@@ -49,7 +49,8 @@
     "add-to-cart": "Agregar al carrito"
   },
   "search": {
-    "search-recents": "Busquedas recientes"
+    "search-recents": "Busquedas recientes",
+    "history": "Historial de busquedas recientes"
   },
   "error-page": {
     "404": "Error 404",
@@ -62,7 +63,9 @@
   },
   "cart": {
     "title": "Carrito de compras",
-    "checkout": "Checkout"
+    "checkout": "Checkout",
+    "total": "Total",
+    "alt-product": "Imagen del producto"
   },
   "sign-in": {
     "title": "Iniciar sesión",

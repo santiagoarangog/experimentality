@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CardProductsService} from '../card-products/card-products.service';
+import {CardProductsInterface} from '../card-products/card-products.interface';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  allProducts: CardProductsInterface[] = [];
+
+  constructor(private cardProductsService: CardProductsService) {
+  }
 
   ngOnInit(): void {
+    this.getProduct();
+  }
+
+  getProduct(): void {
+    this.allProducts = this.cardProductsService.productsOfCart;
   }
 
 }

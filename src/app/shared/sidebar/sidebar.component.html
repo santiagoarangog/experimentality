@@ -14,30 +14,13 @@
             <div class="simplebar-content" style="padding: 0px 24px 0px 0px;">
               <!-- Categories-->
               <div class="widget widget-categories mb-5" *ngIf="history.length">
-                <h3 class="widget-title">Historial</h3>
+                <h3 class="widget-title">{{t("search.history")}}</h3>
                 <hr class="text-danger"/>
                 <ul>
                   <li>
                     <a *ngFor="let item of history" [routerLink]="['/shop/search', item]"
                        class="widget-link">
                       {{ item | titlecase }}
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="widget widget-categories mb-5">
-                <h3 class="widget-title">Terminos de busqueda</h3>
-                <hr class="text-danger"/>
-                <ul>
-                  <li>
-                    <a (click)="searchLimit(10)" id="searchLimit1" href="#" class="widget-link">
-                      Mostrar 1 a 10 resultados
-                    </a>
-                    <a (click)="searchLimit(20)" id="searchLimit2" href="#" class="widget-link">
-                      Mostrar 10 a 20 resultados
-                    </a>
-                    <a (click)="searchLimit(50)" id="searchLimit3" href="#" class="widget-link">
-                      Mostrar > 20 resultados
                     </a>
                   </li>
                 </ul>

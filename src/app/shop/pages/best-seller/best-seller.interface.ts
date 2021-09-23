@@ -1,5 +1,5 @@
 export interface BestSellerInterface {
-  id: number;
+  id: string;
   title: string;
   sale_price: number;
   price: number;
