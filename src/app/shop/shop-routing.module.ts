@@ -13,11 +13,11 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'home/search/:id',
+        path: 'search/:id',
         component: SearchComponent
       },
       {
-        path: 'home/checkout',
+        path: 'checkout',
         component: CheckoutComponent
       },
       {
