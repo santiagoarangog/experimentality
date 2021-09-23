@@ -3,7 +3,9 @@
   <div class="container px-0 px-xl-3">
     <div class="offcanvas offcanvas-collapse order-lg-2 align-items-center" id="primaryMenu" aria-modal="true" role="dialog">
       <div class="offcanvas-header" wfd-invisible="true">
-        <h3 class="mt-2 mb-0">Menu</h3>
+        <a class="btn btn-translucent-primary d-block w-100 disabled" style="border-top-left-radius: 0; border-bottom-right-radius: 0;" data-bs-dismiss="offcanvas" aria-label="Close">
+          <h3 class="mt-2 mb-0">{{t("navbar.title")}}</h3>
+        </a>
       </div>
       <div class="offcanvas-body border-top mt-5">
         <!-- Menu-->
@@ -34,7 +36,8 @@
       <div class="offcanvas-footer border-top mb-5" wfd-invisible="true">
         <br>
         <a class="btn btn-translucent-primary d-block w-100" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-          <i class="ai-x fs-lg me-2"></i> {{t("navbar.close")}}</a>
+          <i class="ai-x fs-lg me-2"></i> {{t("navbar.close")}}
+        </a>
       </div>
     </div>
   </div>
