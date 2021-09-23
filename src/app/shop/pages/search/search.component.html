@@ -8,6 +8,7 @@
       </div>
       <!-- End Sidebar -->
       <div class="col-lg-10 content py-4 mb-2 mb-sm-0 pb-sm-5" style="position: relative;">
+        <app-breadcrumbs></app-breadcrumbs>
         <div class="row">
           <app-card-products *ngIf="products" [products]="products"></app-card-products>
           <app-error-page *ngIf="!products.length" [showError]="typeError"></app-error-page>
