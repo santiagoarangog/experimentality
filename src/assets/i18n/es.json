@@ -60,5 +60,13 @@
   "cart": {
     "title": "Carrito de compras",
     "checkout": "Checkout"
+  },
+  "sign-in": {
+    "title": "Iniciar sesión",
+    "description": "Inicie sesión en su cuenta con el correo electrónico y la contraseña proporcionados durante el registro.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "keep-me": "Recordarme",
+    "forgot-password": "Olvidó su contraseña?"
   }
 }
