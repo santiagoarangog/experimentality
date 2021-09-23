@@ -22,7 +22,7 @@ const routes: Routes = [
         component: CheckoutComponent
       },
       {
-        path: 'sing-in',
+        path: 'sign-in',
         component: SignInComponent
       },
       {
