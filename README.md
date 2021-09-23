@@ -17,5 +17,12 @@ Ejecuta el `ng build` en tu terminal. La versión de despliegue se genera en la 
 
 ## Ve la versión en vivo ahora
 
-Ingresa a la url &bull; https://experimentality-sag.netlify.app/
+Ingresa a la url &bull; [Aplicación Experimentality ClothesShoes](https://experimentality-sag.netlify.app/)
 
+## Componentes adicionales de la aplicación
+
+- Internacionalización con Transloco
+- Componente Breadcrumbs
+- Componente Sing-In
+- Página de error 404
+- Despliegue de la aplicación en Netlify
