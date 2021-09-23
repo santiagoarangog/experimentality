@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './pages/home/home.component';
 import {SearchComponent} from './pages/search/search.component';
 import {CheckoutComponent} from './pages/checkout/checkout.component';
+import {SignInComponent} from './pages/sign-in/sign-in.component';
 
 const routes: Routes = [
   {
@@ -13,12 +14,16 @@ const routes: Routes = [
         component: HomeComponent
       },
       {
-        path: 'home/search/:id',
+        path: 'search/:id',
         component: SearchComponent
       },
       {
-        path: 'home/checkout',
+        path: 'checkout',
         component: CheckoutComponent
+      },
+      {
+        path: 'sing-in',
+        component: SignInComponent
       },
       {
         path: '**',

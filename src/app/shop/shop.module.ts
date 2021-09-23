@@ -8,6 +8,7 @@ import { BestSellerComponent } from './pages/best-seller/best-seller.component';
 import {TranslocoRootModule} from '../transloco-root.module';
 import { SearchComponent } from './pages/search/search.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { SignInComponent } from './pages/sign-in/sign-in.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
     CarouselComponent,
     BestSellerComponent,
     SearchComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    SignInComponent
   ],
   imports: [
     CommonModule,

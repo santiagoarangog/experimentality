@@ -10,6 +10,7 @@
     "best-seller": "Productos más buscados"
   },
   "navbar": {
+    "title": "Menú",
     "men": "Hombre",
     "woman": "Mujer",
     "junior": "Junior",
