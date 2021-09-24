@@ -1,0 +1,87 @@
+<section class="sidebar-enabled sidebar-end border-bottom mb-5 mb-md-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 content py-4">
+        <nav aria-label="breadcrumb" id="breadcrumb">
+
+          <ol class="py-1 my-2 breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Rick Sanchez</li>
+          </ol></nav>
+        <div id="infoCharacter">
+          <h1 class="product-name mb-3 pb-4" id="productName">Rick Sanchez</h1>
+          <!-- Product gallery-->
+          <div class="product-gallery">
+            <div class="product-gallery-preview order-sm-2">
+
+
+              <div class="product-gallery-preview-item active" id="first"><img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" style="object-fit: cover;" alt="Product preview"></div>
+              <div class="product-gallery-preview-item" id="second"><img src="assets/static/images/7456f078134b703579cbcdc7d5b328dc.jpg" style="object-fit: cover;" alt="Product preview"></div>
+              <div class="product-gallery-preview-item" id="three"><img src="assets/static/images/logo.png" style="object-fit: cover;" alt="Product preview"></div>
+              <div class="product-gallery-preview-item" id="four"><img src="assets/static/images/cubes-bg.jpg" style="object-fit: cover;" alt="Product preview"></div>
+            </div>
+
+            <div class="product-gallery-thumblist order-sm-1" style="border-color:#0a66cc;">
+
+
+              <a class="product-gallery-thumblist-item bg-size-cover zindex-5 active" href="#first" style="background-image: url(https://rickandmortyapi.com/api/character/avatar/1.jpeg);object-fit: cover;"></a>
+              <a class="product-gallery-thumblist-item bg-size-cover zindex-5" href="#second" style="background-image: url(assets/static/images/7456f078134b703579cbcdc7d5b328dc.jpg); object-fit: cover;"></a>
+              <a class="product-gallery-thumblist-item bg-size-cover zindex-5" href="#three" style="background-image: url(assets/static/images/logo.png); object-fit: cover;"></a>
+              <a class="product-gallery-thumblist-item bg-size-cover zindex-5" href="#four" style="background-image: url(assets/static/images/cubes-bg.jpg); object-fit: cover;"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Sharing-->
+        <div class="d-flex align-items-center justify-content-center justify-content-md-end py-4 pt-md-0 pt-lg-5">
+          <h6 class="text-nowrap my-2 me-3">Share product:</h6>
+          <a class="btn-social bs-outline bs-facebook ms-2 my-2" href="https://www.facebook.com/santiago.arangogutierrez.1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn-social bs-outline bs-instagram ms-2 my-2" href="https://www.instagram.com/santiago_arango_g/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="btn-social bs-outline bs-email ms-2 my-2" href="mailto:santiago9606@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+      <!-- Product info-->
+      <div class="col-lg-4 sidebar bg-secondary pt-5 ps-lg-4 pb-md-2">
+        <div class="ps-lg-4 pb-5" id="oterInfoCharacter">
+
+          <a class="d-inline-block text-decoration-none" href="#reviews" data-scroll="">
+            <div class="py-4">
+              <del class="text-muted me-2">$-- / --</del><span class="h4 mb-0">$-- / --</span>
+            </div>
+            <div class="fs-sm pb-1 mb-2"><span class="fw-medium text-heading">Choose color - </span><span class="ms-1" id="colorOptionText">Gray</span></div>
+            <div class="d-inline-block bg-light rounded px-3 mb-4">
+              <div class="form-check form-option form-option-color form-check-inline mt-2">
+                <input class="form-check-input" type="radio" name="color" id="gray" value="Gray" data-label="colorOptionText" checked="">
+                <label class="form-option-label rounded-circle" for="gray"><span class="form-option-color-indicator rounded-circle" style="background-color: #707175;"></span></label>
+              </div>
+              <div class="form-check form-option form-option-color form-check-inline mt-2">
+                <input class="form-check-input" type="radio" name="color" id="blue" value="Blue" data-label="colorOptionText">
+                <label class="form-option-label rounded-circle" for="blue"><span class="form-option-color-indicator rounded-circle" style="background-color: #0a66cc;"></span></label>
+              </div>
+              <div class="form-check form-option form-option-color form-check-inline mt-2">
+                <input class="form-check-input" type="radio" name="color" id="brown" value="Brown" data-label="colorOptionText">
+                <label class="form-option-label rounded-circle" for="brown"><span class="form-option-color-indicator rounded-circle" style="background-color: #987875;"></span></label>
+              </div>
+              <div class="form-check form-option form-option-color form-check-inline mt-2">
+                <input class="form-check-input" type="radio" name="color" id="white" value="White" data-label="colorOptionText">
+                <label class="form-option-label rounded-circle" for="white"><span class="form-option-color-indicator rounded-circle" style="background-color: #e8e6e2;"></span></label>
+              </div>
+              <div class="form-check form-option form-option-color form-check-inline mt-2">
+                <input class="form-check-input" type="radio" name="color" id="purple" value="Purple" data-label="colorOptionText">
+                <label class="form-option-label rounded-circle" for="purple"><span class="form-option-color-indicator rounded-circle" style="background-color: #846ba6;"></span></label>
+              </div>
+            </div>
+            <div class="d-flex mt-4 mb-3">
+              <input class="form-control me-3" type="number" style="width: 5rem;" min="1" value="1">
+              <button class="btn btn-primary d-block w-100" type="button">Add to Cart</button>
+            </div>
+            <button class="btn btn-outline-secondary d-block w-100 mb-grid-gutter" type="button"><i class="far fa-heart"></i> Add to Wishlist</button>
+            <p class="fs-sm mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p></a><a class="fancy-link fs-sm" href="#more-info" data-scroll="">Read more</a>
+          <hr class="my-4">
+          <ul class="list-unstyled fs-sm">
+            <li><span class="text-heading fw-medium me-2">SKU:</span>1 - Rick Sanchez</li>
+            <li><span class="text-heading fw-medium me-2">Category:</span><a class="text-body text-decoration-none" href="#">Human</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></section>

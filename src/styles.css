@@ -1,37 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
 /*------scroll bar---------------------*/
+:root {
+  --blue: #7dcdff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #7dcdff;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #ffffff;
+  --gray: #869ab8;
+  --gray-dark: #384c74;
+  --primary: #335eea;
+  --secondary: #506690;
+  --success: #007bff;
+  --info: #7c69ef;
+  --warning: #fad776;
+  --danger: #df4759;
+  --light: #f9fbfd;
+  --dark: #2b354f;
+  --primary-desat: #6c8aec;
+  --black: #161c2d;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 7px;
 }
+
 ::-webkit-scrollbar-button {
   width: 0px;
   height: 0px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #525965;
   border: 0px none #ffffff;
   border-radius: 0px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #525965;
 }
+
 ::-webkit-scrollbar-thumb:active {
   background: #525965;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
   border: 0px none #ffffff;
   border-radius: 50px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: transparent;
 }
+
 ::-webkit-scrollbar-track:active {
   background: transparent;
 }
+
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px var(--green) !important;
 }
 
 .align-items-center {
@@ -40,11 +78,11 @@
   justify-content: center;
 }
 
-.margin-top{
+.margin-top {
   margin-top: 10%;
 }
 
-.margin-top-search{
+.margin-top-search {
   margin-top: 5%;
 }
 

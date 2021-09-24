@@ -16,9 +16,7 @@ export class CardProductsComponent implements OnInit {
   constructor(private cardProductsService: CardProductsService) {
   }
 
-  ngOnInit(): void {
-    console.log(this.cardProductsService.productsOfCart);
-  }
+  ngOnInit(): void {}
 
   addProduct(thumbnail: string, title: string, price: number, quantity: number = 1): void {
     this.productsList = [{

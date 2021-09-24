@@ -10,10 +10,11 @@ import {BestSellerService} from '../best-seller/best-seller.service';
 })
 export class SearchComponent implements OnInit {
 
-  search: string = '';
-  products: BestSellerInterface[] = [];
   limit: number = 20;
-  typeError: string = "empty-cart";
+  typeError: string = 'empty-products';
+  showError: boolean = true;
+
+  products: BestSellerInterface[] = [];
 
   constructor(
     private router: Router,
@@ -25,13 +26,23 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe((params: Params) => {
       if (params.id) {
-        this.search = params.id;
-        this.bestSellerService.get(params.id, this.limit)
-          .subscribe((result: BestSellerInterface[]) => {
-            this.products = result;
-          });
+        this.getProducts(params.id);
       }
     });
+  }
+
+  getProducts(id: string): void {
+    this.bestSellerService.get(id, this.limit)
+      .subscribe((result: BestSellerInterface[]) => {
+          this.products = result;
+        },
+        () => {
+          this.showError = true;
+          this.typeError = "bad-response";
+        },
+        () => {
+          this.showError = false;
+        });
   }
 
 }
