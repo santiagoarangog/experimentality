@@ -12,3 +12,10 @@
   color: black;
   border: solid 2px black;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .shoppingCart {
+    font-size: 35px;
+    color: black;
+  }
+}

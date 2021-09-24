@@ -1,38 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-.align-items-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.margin-top{
-  margin-top: 10%;
-}
-
-.margin-top-search{
-  margin-top: 5%;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .margin-top {
-    margin-top: 12%;
-  }
-
-  .margin-top-search {
-    margin-top: 7%;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .margin-top {
-    margin-top: 32%;
-  }
-
-  .margin-top-search {
-    margin-top: 30%;
-  }
-}
-
 /*------scroll bar---------------------*/
 ::-webkit-scrollbar {
   width: 5px;
@@ -66,4 +32,38 @@
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-top{
+  margin-top: 10%;
+}
+
+.margin-top-search{
+  margin-top: 5%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .margin-top {
+    margin-top: 12%;
+  }
+
+  .margin-top-search {
+    margin-top: 7%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .margin-top {
+    margin-top: 32%;
+  }
+
+  .margin-top-search {
+    margin-top: 30%;
+  }
 }
