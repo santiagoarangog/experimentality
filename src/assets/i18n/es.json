@@ -59,7 +59,9 @@
     "page-not-found": "Página no encontrada",
     "help-text-404": "Parece que no podemos encontrar la página que buscas.",
     "back-button": "Regresar a la página principal",
-    "empty-cart": "Sin resultados para el criterio de busqueda"
+    "empty-cart": "Sin resultados para el criterio de busqueda",
+    "alt-bad-request": "Sin acceso a la API",
+    "bad-request": "No podemos tener comunicación con el servidor, estamos trabajando fuertemente para solucionarlo"
   },
   "cart": {
     "title": "Carrito de compras",

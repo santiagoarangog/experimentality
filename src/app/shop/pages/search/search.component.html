@@ -11,7 +11,7 @@
         <app-breadcrumbs></app-breadcrumbs>
         <div class="row">
           <app-card-products *ngIf="products" [products]="products"></app-card-products>
-          <app-error-page *ngIf="!products.length" [showError]="typeError"></app-error-page>
+          <app-error-page *ngIf="showError" [showError]="typeError"></app-error-page>
         </div>
       </div>
     </div>

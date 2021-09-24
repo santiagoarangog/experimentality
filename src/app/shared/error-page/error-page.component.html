@@ -4,7 +4,7 @@
        style="flex: 1 0 auto;">
     <div class="pt-7 pb-5">
       <div class="text-center mb-2 pb-4">
-        <img class="d-inline-block animate__animated" src="assets/media/404-error.svg" style="width: 500px"
+        <img class="d-inline-block animate__animated animate__zoomInRight" src="assets/media/404-error.svg" style="width: 500px"
              [alt]="t('error-page.alt-image-404')">
         <h1 class="mb-grid-gutter">
           <span class="visually-hidden">{{t("error-page.404") | uppercase}}</span>
@@ -19,14 +19,28 @@
     </div>
   </div>
 
-  <div *ngIf="showError === 'empty-cart'" class="container d-flex flex-column justify-content-center pt-5 mt-n6"
+  <div *ngIf="showError === 'empty-products'" class="container d-flex flex-column justify-content-center pt-5 mt-n6"
        style="flex: 1 0 auto;">
     <div class="pt-7 pb-5">
       <div class="text-center mb-2 pb-4">
-        <img class="d-inline-block animate__animated" src="assets/media/empty-cart.svg" style="width: 500px"
+        <img class="d-inline-block animate__animated animate__backInDown" src="assets/media/empty-cart.svg" style="width: 500px"
              [alt]="t('error-page.alt-image-404')">
         <hr class="bg-danger">
-        <h2 class="mb-grid-gutter">{{t("error-page.empty-cart")}}</h2>
+        <h2 class="mb-grid-gutter text-muted text-shadow">{{t("error-page.empty-cart")}}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showError === 'bad-response'" class="container d-flex flex-column justify-content-center pt-5 mt-n6"
+       style="flex: 1 0 auto;">
+    <div class="pt-7 pb-5">
+      <div class="text-center mb-2 pb-4">
+        <img class="d-inline-block animate__animated animate__backInDown" src="assets/media/bad-request.svg" style="width: 500px"
+             [alt]="t('error-page.alt-bad-request')">
+        <hr class="bg-danger">
+        <h2 class="mb-grid-gutter text-shadow">
+          {{t("error-page.bad-request")}}
+        </h2>
       </div>
     </div>
   </div>
