@@ -1,6 +1,6 @@
 <!--Card Products-->
 <section class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3" *transloco="let t">
-  <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter" *ngFor="let product of products">
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter" *ngFor="let product of products; let i = index">
     <div class="card card-product card-hover">
           <span *ngIf="product.sale_price"
                 class="badge badge-floating rounded-pill bg-danger">
@@ -25,7 +25,8 @@
       </div>
       <div class="card-footer">
         <div class="float-end">
-          <a class="btn btn-dark" (click)="addProduct(product.thumbnail,product.title,product.price)">
+          <a class="btn btn-dark" (click)="addProduct($event.target,product.thumbnail,product.title,product.price)"
+             [id]="product.id+i">
             <i class="ai-shopping-cart" style="font-size: 20px"></i>
             <span class="btn-divider"></span>
             {{t("products.add-to-cart")}}

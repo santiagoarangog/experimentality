@@ -16,16 +16,19 @@ export class CardProductsComponent implements OnInit {
   constructor(private cardProductsService: CardProductsService) {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
-  addProduct(thumbnail: string, title: string, price: number, quantity: number = 1): void {
-    this.productsList = [{
+  addProduct(element: any, thumbnail: string, title: string, price: number, quantity: number = 1): void {
+    element.textContent = 'Agregando item...';
+    this.productsList.push({
       thumbnail: thumbnail,
       title: title,
       price: price,
       quantity: quantity
-    }];
+    });
     this.cardProductsService.addProduct(this.productsList);
+    element.textContent = 'Item agregado';
   }
 
 }

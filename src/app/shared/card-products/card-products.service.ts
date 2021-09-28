@@ -9,6 +9,7 @@ import {CardProductsInterface} from './card-products.interface';
 export class CardProductsService {
 
   public _products: CardProductsInterface[] = [];
+  public allProducts: CardProductsInterface[] = [];
 
   constructor(private http: HttpClient,
               private _router: Router) {
